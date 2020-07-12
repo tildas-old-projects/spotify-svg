@@ -2,5 +2,8 @@
     "version": 2,
     "rewrites": [
         { "source": "/now-playing", "destination": "/api/now-playing" }
-    ]
+    ],
+    "github": {
+        "silent": "true"
+    }
 }
