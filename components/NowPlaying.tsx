@@ -21,6 +21,9 @@ export const Player: React.FC<Props> = ({
 }) => {
   return (
     <Svg width="256" height="64">
+      <script>
+        console.log('hello from spotify-svg :eyes')
+      </script>
       <style>
         {`
             .paused { 
