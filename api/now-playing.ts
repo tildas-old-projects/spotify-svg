@@ -20,7 +20,7 @@ export default async function (req: NowRequest, res: NowResponse) {
     return res.status(200).end();
   }
 
-  if (params && typeof params.returnJson !== 'undefined') {
+  if (params && typeof params.trackInfo !== 'undefined') {
     if (item && isPlaying) {
       return res.json({
         'artist': item.artists,
