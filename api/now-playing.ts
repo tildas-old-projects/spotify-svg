@@ -27,6 +27,8 @@ export default async function (req: NowRequest, res: NowResponse) {
         'track': item.name,
         'link': item.href
       })
+    } else {
+      return res.status(204)
     }
   }
 
