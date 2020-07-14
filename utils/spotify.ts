@@ -21,7 +21,7 @@ async function getAuthorizationToken() {
   const response = await fetch(`${url}`, {
     method: "POST",
     headers: {
-      Authorization,
+      "Authorization": Authorization,
       "Content-Type": "application/x-www-form-urlencoded",
     },
     body,

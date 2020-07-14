@@ -20,6 +20,16 @@ export default async function (req: NowRequest, res: NowResponse) {
     return res.status(200).end();
   }
 
+  if (params && typeof params.returnJson !== 'undefined') {
+    if (item && isPlaying) {
+      return res.json({
+        'artist': item.artists,
+        'track': item.name,
+        'link': item.href
+      })
+    }
+  }
+
   res.setHeader("Content-Type", "image/svg+xml");
   // res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
   res.setHeader("Cache-Control", "no-cache");

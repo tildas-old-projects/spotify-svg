@@ -1,6 +1,7 @@
 import React from "react";
 import Svg from "./Svg";
 import Text from "./Text";
+import humanizeMs from '../utils/time';
 
 export interface Props {
   cover?: string;
@@ -67,7 +68,8 @@ export const Player: React.FC<Props> = ({
             .progress-bar,
             #track,
             #artist,
-            #cover {
+            #cover,
+            #seconds {
               opacity: 0;
               animation: appear 300ms ease-out forwards;
             }
