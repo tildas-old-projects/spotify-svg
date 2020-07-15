@@ -26,9 +26,9 @@ export default async function (req: NowRequest, res: NowResponse) {
         'artist': item.artists,
         'track': item.name,
         'link': item.href
-      })
+      }).end();
     } else {
-      return res.status(204)
+      return res.status(204).end();
     }
   }
 
