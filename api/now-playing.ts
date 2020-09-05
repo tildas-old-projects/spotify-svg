@@ -16,8 +16,9 @@ export default async function (req: NowRequest, res: NowResponse) {
         Location: item.external_urls.spotify,
       });
       return res.end();
+    } else {
+      return res.status(204).end();
     }
-    return res.status(200).end();
   }
 
   if (params && typeof params.trackInfo !== 'undefined') {
