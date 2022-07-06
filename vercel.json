@@ -4,6 +4,6 @@
         { "source": "/now-playing", "destination": "/api/now-playing" }
     ],
     "github": {
-        "silent": "true"
+        "silent": true
     }
 }
